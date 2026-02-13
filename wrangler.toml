@@ -1,6 +1,6 @@
-name = "cf-ai-chat"
+name = "cf-gpt-ai"
 main = "src/worker.js"
-compatibility_date = "2025-08-25"
+compatibility_date = "2026-02-13"
 
 [ai]
 binding = "AI"
@@ -17,6 +17,7 @@ preview_id = "8055a8017ebb428c96d8ec18424f9a3e"
 # 部署前请修改为安全的密码
 [vars]
 CHAT_PASSWORD = "@Lmy1314"
+
 
 
 
