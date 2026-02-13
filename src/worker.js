@@ -827,7 +827,7 @@ function getHTML() {
         <div class="header">
             <h1>🤖 CF AI Chat</h1>
             <p>支持多模型切换的智能聊天助手</p>
-            <div class="author-info" onclick="window.open('https://www.025862.xyz/', '_blank')">
+            <div class="author-info" onclick="window.open('https://www.025862.xyz/')">
                 <p>📺 作者：<strong>Github：梦海博客</strong></p>
             </div>
         </div>
@@ -885,13 +885,13 @@ function getHTML() {
                     return true; // 页面加载期间暂时允许通过
                 }
                 
-                for (let element of authorElements) {
-                    if (!element.textContent.includes('Github:梦海博客')) {
-                        alert('作者信息已被篡改，服务将停止运行！');
-                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：Github:梦海博客</p></div>';
-                        return false;
-                    }
-                }
+                // for (let element of authorElements) {
+                //     if (!element.textContent.includes('Github: 梦海博客')) {
+                //         alert('作者信息已被篡改，服务将停止运行！');
+                //         document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：Github:梦海博客</p></div>';
+                //         return false;
+                //     }
+                // }
                 return true;
             } catch (error) {
                 console.error('验证作者信息时发生错误:', error);
@@ -1209,5 +1209,6 @@ function getHTML() {
 </body>
 </html>`;
 }
+
 
 
