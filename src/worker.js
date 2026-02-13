@@ -827,8 +827,8 @@ function getHTML() {
         <div class="header">
             <h1>🤖 CF AI Chat</h1>
             <p>支持多模型切换的智能聊天助手</p>
-            <div class="author-info" onclick="window.open('https://www.youtube.com/@%E5%BA%B7%E5%BA%B7%E7%9A%84V2Ray%E4%B8%8EClash', '_blank')">
-                <p>📺 作者：<strong>YouTube：康康的订阅天地</strong></p>
+            <div class="author-info" onclick="window.open('https://www.025862.xyz/', '_blank')">
+                <p>📺 作者：<strong>Github：梦海博客</strong></p>
             </div>
         </div>
         <div class="main-content">
@@ -872,8 +872,8 @@ function getHTML() {
     <script>
         // 作者信息保护
         const AUTHOR_VERIFICATION = {
-            name: "康康的订阅天地",
-            platform: "YouTube",
+            name: "梦海博客",
+            platform: "Github",
             required: true
         };
         
@@ -886,9 +886,9 @@ function getHTML() {
                 }
                 
                 for (let element of authorElements) {
-                    if (!element.textContent.includes('YouTube：康康的订阅天地')) {
+                    if (!element.textContent.includes('Github:梦海博客')) {
                         alert('作者信息已被篡改，服务将停止运行！');
-                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：YouTube：康康的订阅天地</p></div>';
+                        document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：Github:梦海博客</p></div>';
                         return false;
                     }
                 }
@@ -1209,4 +1209,5 @@ function getHTML() {
 </body>
 </html>`;
 }
+
 
