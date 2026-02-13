@@ -1,17 +1,17 @@
 // 作者信息保护 - 不可篡改
 const AUTHOR_INFO = {
-  name: "康康的订阅天地",
-  platform: "YouTube",
+  name: "梦海博客",
+  platform: "Github",
   verified: true
 };
 
 // 验证作者信息完整性
 function verifyAuthorInfo() {
   // 直接验证关键信息，避免编码问题
-  if (AUTHOR_INFO.name !== "康康的订阅天地" || 
-      AUTHOR_INFO.platform !== "YouTube" || 
+  if (AUTHOR_INFO.name !== "梦海博客" || 
+      AUTHOR_INFO.platform !== "Github" || 
       !AUTHOR_INFO.verified) {
-    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：YouTube：康康的订阅天地");
+    throw new Error("作者信息已被篡改，服务拒绝运行！请保持原始作者信息：Github 梦海博客");
   }
 }
 
@@ -1209,3 +1209,4 @@ function getHTML() {
 </body>
 </html>`;
 }
+
