@@ -900,7 +900,7 @@ function getHTML() {
         }
         
         // 定期检查作者信息
-        setInterval(verifyAuthorDisplay, 3000);
+        // setInterval(verifyAuthorDisplay, 3000);
         
         // 全局错误处理
         window.onerror = function(message, source, lineno, colno, error) {
@@ -1209,6 +1209,7 @@ function getHTML() {
 </body>
 </html>`;
 }
+
 
 
 
