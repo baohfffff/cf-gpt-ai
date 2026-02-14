@@ -885,13 +885,13 @@ function getHTML() {
                     return true; // 页面加载期间暂时允许通过
                 }
                 
-                for (let element of authorElements) {
-                    if (!element.textContent.includes('Github: 梦海博客')) {
-                        alert('欢迎使用梦海智能ai助手');
-                        // document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：Github:梦海博客</p></div>';
-                        return true;
-                    }
-                }
+                // for (let element of authorElements) {
+                //     if (!element.textContent.includes('Github: 梦海博客')) {
+                //         alert('欢迎使用梦海智能ai助手');
+                //         document.body.innerHTML = '<div style="text-align:center;margin-top:50px;"><h1>❌ 服务已停止</h1><p>作者信息被篡改，请保持原始作者信息：Github:梦海博客</p></div>';
+                //         return true;
+                //     }
+                // }
                 return true;
             } catch (error) {
                 console.error('验证作者信息时发生错误:', error);
@@ -1209,6 +1209,7 @@ function getHTML() {
 </body>
 </html>`;
 }
+
 
 
 
